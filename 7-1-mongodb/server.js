@@ -188,7 +188,7 @@
 import mongoose from "mongoose";
 
 // establish connection
-mongoose.connect()
+mongoose.connect("mongodb+srv://joudjabri_db_user:JiiJii&&886@cluster0.h8285ts.mongodb.net/");
 // define schema
 const studentSchema = new mongoose.Schema({
          name: String,
@@ -208,7 +208,11 @@ async function createStudents() {
       createStudents();
 
 // read document
-
+async function readStudents() {
+         const all = await Student.find();
+         console.log(all);
+      }
+      readStudents();
 
 // update document
 
