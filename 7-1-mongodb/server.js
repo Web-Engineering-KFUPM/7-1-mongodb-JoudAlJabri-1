@@ -185,13 +185,11 @@
  */
 
 // import mongoose
-
+import mongoose from "mongoose";
 
 // establish connection
-
-
+mongoose.connect()
 // define schema
-
 
 // create document
 
