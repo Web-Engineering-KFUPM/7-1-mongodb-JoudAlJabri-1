@@ -190,6 +190,12 @@ import mongoose from "mongoose";
 // establish connection
 mongoose.connect()
 // define schema
+const studentSchema = new mongoose.Schema({
+         name: String,
+         age: Number,
+         major: String
+      });
+      const Student = mongoose.model("Student", studentSchema);
 
 // create document
 
